@@ -59,13 +59,22 @@ function App() {
 // addNumbers(1,2,3) 
 // addNumbers(10,10,10,10,10)
 
-var person = { 
-  firstname:"Tom", 
-  lastname:"Hanks" 
-}; 
-//access the object values 
-console.log(person.firstname) 
-console.log(person.lastname)
+// var person:{
+//   firstname: string;
+//   lastname:string;
+//   age:number;
+// } = { 
+//   firstname:"Tom", 
+//   lastname:"Hanks" ,
+//   age:89
+// }; 
+// //access the object values 
+// console.log(person.firstname, person.age) 
+
+let arr: string[];
+arr=["jhhhh","kkkk"]
+console.log(arr);
+
 
   return (
     <div className="App">
