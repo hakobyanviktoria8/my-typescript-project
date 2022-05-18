@@ -1,7 +1,10 @@
 "use strict"; 
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+function add(a:number,b:number) {
+  return a+b
+}
+console.log(add(2,3));
 
 function App() {
   var name:string = "John"; 
@@ -28,6 +31,7 @@ function App() {
       <p>var name:string;</p>
       <p>var name = ”mary”</p>
       <p>var name;</p>
+      <hr/>
     </div>
   );
 }
