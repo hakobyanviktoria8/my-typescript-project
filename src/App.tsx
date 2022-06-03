@@ -1,5 +1,6 @@
 "use strict"; 
 import React from 'react';
+import Add from './Add';
 import imgObj from "./img/Screenshot_1.jpg"
 
 function App() {
@@ -73,7 +74,7 @@ var person:{
 
 let arr: string[];
 arr=["jhhhh","kkkk"]
-console.log(arr);
+// console.log(arr);
 
 // any type
 let favorite: any[];
@@ -106,6 +107,9 @@ favorite=["sdsd",122]
         favorite=["sdsd",122]
       </pre></code>
       <p>{favorite[0]}</p>
+      <hr/>
+      <h2>Add function</h2>
+      <Add />
     </div>
   );
 }

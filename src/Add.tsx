@@ -1,6 +1,9 @@
 import React from 'react'
 
-function Add(a:number,b:number) {
+function Add() {
+  let a:number=2;
+  let b:number=3;
+  
   return (
     <div>Sum a + b = {a+b}</div>
   )
