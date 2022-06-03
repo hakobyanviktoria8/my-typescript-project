@@ -17,6 +17,10 @@ function Add() {
   let add = combine
   console.log(add(2,2));
   
+  let unKnownType:unknown;
+  unKnownType = "Hello"
+console.log(unKnownType);
+
   return (
     <div>
       <h3>Sum a + b = {a+b}</h3>
