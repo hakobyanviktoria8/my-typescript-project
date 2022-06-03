@@ -1,6 +1,6 @@
 "use strict"; 
 import React from 'react';
-
+import imgObj from "./img/Screenshot_1.jpg"
 
 function App() {
   // function add(a:number,b:number) {
@@ -59,15 +59,15 @@ function App() {
 // addNumbers(1,2,3) 
 // addNumbers(10,10,10,10,10)
 
-// var person:{
-//   firstname: string;
-//   lastname:string;
-//   age:number;
-// } = { 
-//   firstname:"Tom", 
-//   lastname:"Hanks" ,
-//   age:89
-// }; 
+var person:{
+  firstname: string;
+  lastname:string;
+  age:number;
+} = { 
+  firstname:"Tom", 
+  lastname:"Hanks" ,
+  age:89
+}; 
 // //access the object values 
 // console.log(person.firstname, person.age) 
 
@@ -75,16 +75,37 @@ let arr: string[];
 arr=["jhhhh","kkkk"]
 console.log(arr);
 
+// any type
+let favorite: any[];
+favorite=["sdsd",122]
 
   return (
     <div className="App">
       <h1>Type Script</h1>
-      <h2>Variable Declaration Syntax</h2>
+      <h2>String type</h2>
       <p>var name:string = ”mary”</p>
       <p>var name:string;</p>
       <p>var name = ”mary”</p>
       <p>var name;</p>
       <hr/>
+      <h2>Array string type</h2>
+      <code><pre>
+      let arr: string[];
+      arr=["jhhhh","kkkk"]
+      </pre></code>
+      <p>{arr[0]}</p>
+      <hr/>
+      <h2>Object type</h2>
+      <img src={imgObj}/>
+      <p>{person.firstname}</p>
+      <p>{person.age}</p>
+      <hr/>
+      <h2>ANY type</h2>
+      <code><pre>
+        let favorite: any[];
+        favorite=["sdsd",122]
+      </pre></code>
+      <p>{favorite[0]}</p>
     </div>
   );
 }
