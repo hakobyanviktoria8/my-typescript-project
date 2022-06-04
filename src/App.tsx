@@ -2,6 +2,7 @@
 import React from 'react';
 import Add from './Add';
 import imgObj from "./img/Screenshot_1.jpg"
+import Todolist from './Todolist';
 
 function App() {
   // function add(a:number,b:number) {
@@ -83,6 +84,8 @@ favorite=["sdsd",122]
   return (
     <div className="App">
       <h1>Type Script</h1>
+      <Todolist/>
+      <hr/>
       <h2>String type</h2>
       <p>var name:string = ”mary”</p>
       <p>var name:string;</p>
@@ -110,6 +113,7 @@ favorite=["sdsd",122]
       <hr/>
       <h2>Add function</h2>
       <Add />
+      <hr/>
     </div>
   );
 }
